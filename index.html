@@ -81,7 +81,42 @@
             width: 200px;
         }
 
-       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em auto;
+            font-family: Arial, sans-serif;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #507687;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        tbody tr {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th {
+            font-weight: bold;
+        }
         footer {
             text-align: center;
             padding: 1em;
@@ -98,9 +133,9 @@
 
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="about.php">About me</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About me</a></li>
             <li class="dropdown"><a href="#">Materi</a>
                 <ul>
                     <li><a href="penulisan-css.docx">Penulisan CSS</a></li>
@@ -108,34 +143,59 @@
             </li>
         </ul>
     </nav>
+    
+    <hr>
 
-    <hr />
+    <header style="text-align: center;">
+        <img src="gambar/rjb.jpg" width="200" height="200" style="border-radius: 50%;" alt="Rajab Supriyadin" />
+        <h1 style="color: #507687;">Rajab Supriyadin</h1>
+        <p><strong>(Junior Web Developer)</strong></p>
+    </header>
+    <hr>
 
-    <article>
-        <h1 style="color:#507687;">About Me</h1>
+    <article style="text-align: center;">
+        <h2 style="color: #B8001F;">OVERVIEW</h2>
         <p>
             Hi, saya adalah Web Developer muda yang berdomisili di Tangerang Selatan.
-            Saat ini sedang belajar HTML untuk membuat profil pribadi.
+            saat ini sedang belajar HTML untuk membuat profil pribadi.
         </p>
-        <p>
-            Saya memang masih baru dalam web development, karena itu
-            saya tidak akan pernah berhenti belajar.
-        </p>
-        <p>
-            Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
-            Simak video lengkap dan mari kita belajar bersama.
-        </p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/71a2zeC71gk?si=psQtNtkm0jZUF1-z" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </article>
 
-    <br />
+    <div style="max-width: 600px; margin: 3em auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Pengalaman</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>HTML (Expert)</li>
+                            <li>CSS (Beginner)</li>
+                            <li>Javascript (Beginner)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Freelancer di Internet</li>
+                            <li>Freelancer di Internet</li>
+                            <li>Freelancer di Internet</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br> 
 
     <footer style="text-align: center;">
         <p>Copyright &copy; 2024 Rajab Supriyadin.</p>
     </footer>
+    
 </body>
 
 </html>
