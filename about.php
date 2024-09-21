@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajab Supriyadin Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #FCFAEE;
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul {
+            background: #507687;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            width: 100%;
+        }
+
+        nav ul:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li:hover {
+            background-color: #FCFAEE;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 20px 30px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            color: #B8001F;
+        }
+
+        nav ul ul {
+            display: none;
+            background-color: #507687;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            max-width: 300px;
+            width: auto;
+        }
+
+        nav ul ul li {
+            float: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+            position: relative;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul li a {
+            padding: 10px 40px;
+            color: #fff;
+        }
+
+        nav ul ul li a:hover {
+            background: #FCFAEE;
+        }
+
+        nav ul ul ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 200px;
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #507687;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="about.php">About me</a></li>
+            <li class="dropdown"><a href="#">Materi</a>
+                <ul>
+                    <li><a href="penulisan-css.docx">Penulisan CSS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <hr />
+
+    <article>
+        <h1 style="color:#507687;">About Me</h1>
+        <p>
+            Hi, saya adalah Web Developer muda yang berdomisili di Tangerang Selatan.
+            Saat ini sedang belajar HTML untuk membuat profil pribadi.
+        </p>
+        <p>
+            Saya memang masih baru dalam web development, karena itu
+            saya tidak akan pernah berhenti belajar.
+        </p>
+        <p>
+            Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+            Simak video lengkap dan mari kita belajar bersama.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/71a2zeC71gk?si=psQtNtkm0jZUF1-z" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+
+    <br />
+
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2024 Rajab Supriyadin.</p>
+    </footer>
+</body>
+
+</html>
